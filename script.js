@@ -143,9 +143,10 @@ const getData = () => {
       "ASYLUM PENDING",
   };
 
-  firstAndLastName = `${data.firstName} ${data.lastName}`;
-
-  console.log(data);
+  firstAndLastName = `${data.firstName}-${data.lastName}`;
+  pdfName.innerHTML = firstAndLastName
+    ? `i-765-${firstAndLastName}-${getTodaysDate()}.pdf`
+    : `i-765-${getTodaysDate()}.pdf`;
 
   if (
     data.lastName &&
@@ -222,6 +223,3 @@ function getTodaysDate() {
 buttonPdf.addEventListener("click", getData);
 
 pdfDate.textContent = getTodaysDate();
-pdfName.innerHTML = firstAndLastName
-  ? `i-765-${firstAndLastName}-${getTodaysDate()}.pdf`
-  : `i-765-${getTodaysDate()}.pdf`;
