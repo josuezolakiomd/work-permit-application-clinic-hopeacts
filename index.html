@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <title class="pdf-name">Hope Acts</title>
+  </head>
+  <body>
+    <main>
+      <div class="container form-page">
+        <div class="header">
+          <h1>Hope Acts</h1>
+          <p>
+            Hope Acts is a non-profit organization that provides support to the
+            homeless in the Portland, Maine area.
+          </p>
+
+          <a href="https://hopeacts.org/" target="_blank">Our Website</a>
+        </div>
+        <div class="form-container">
+          <h3>WELCOME!</h3>
+
+          <div class="form">
+            <div class="personal-info-client">
+              <h2 class="parts">Information About You</h2>
+              <div class="personal">
+                <label for="">
+                  <span>Last Name <span class="required">*</span></span>
+                  <input type="text" id="last-name" required/>
+                </label>
+
+                <label for="">
+                  <span>First Name <span class="required">*</span></span>
+                  <input type="text" id="first-name" required/>
+                </label>
+
+                <label for="">
+                  <span>Middle Name</span>
+                  <input type="text" placeholder="If applicable" id="middle-name"/>
+                </label>
+
+                <label for="">
+                  <span>Other Names</span>
+                  <input type="text" placeholder="Optional" id="other-names"/>
+                </label>
+              </div>
+
+            <div class="personal-info-client">
+              <h2 class="parts">Your U.S. Mailing Address</h2>
+              <div class="personal">
+                <label for="">
+                  <span>In Care Of Name (if any)</span>
+                  <input type="text" id="in-care-of"/>
+                </label>
+
+                <label for="">
+                  <span> Street Number and Name <span class="required">*</span></span>
+                  <input type="text" id="street-number-name"/>
+                </label>
+
+                <label for="">
+                  <span>Apt. Ste. Flr.</span>
+                  <input type="text" placeholder="Ex.: Apt 33" id="apt-number"/>
+                </label>
+
+                <label for="">
+                  <span>City or Town <span class="required">*</span></span>
+                  <input type="text" placeholder="Ex.: Westbrook" id="city" required/>
+                </label>
+
+                <label for="">
+                  <span>State <span class="required">*</span></span>
+                  <input type="text" placeholder="ME" id="state" required/>
+                </label>
+
+                <label for="">
+                  <span>ZIP Code <span class="required">*</span></span>
+                  <input type="number" placeholder="04092" id="zip-code" required/>
+                </label>
+              </div>
+
+            <div class="personal-info-client">
+              <h2 class="parts">Other Information</h2>
+              <div class="personal">
+                <label for="">
+                  <span>Alien Registration Number <span class="required">*</span></span>
+                  <input type="number"  placeholder="(A-Number) (if any)" id="alien-number"/>
+                </label>
+
+                <label for="">
+                  <span>USCIS Online Account Number</span>
+                  <input type="number" placeholder="(if any)" id="uscis-account-number"/>
+                </label>
+
+                <label for="">
+                  <span>Gender <span class="required">*</span></span>
+                  <select id="genders">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+                </label>
+
+                <label for="">
+                  <span>Marital Status <span class="required">*</span></span>
+                  <select id="marital-status">
+                    <option value="1">Single</option>
+                    <option value="2">Married</option>
+                    <option value="3">Divorced</option>
+                    <option value="4">Widowed</option>
+                </select>
+                </label>
+
+                <label for="">
+                  <span>Father's Last Name</span>
+                  <input type="text" id="father-last-name"/>
+                </label>
+
+                <label for="">
+                  <span>Father's First Name</span>
+                  <input type="text" id="father-first-name"/>
+                </label>
+
+                <label for="">
+                  <span>Mother's Last Name</span>
+                  <input type="text" placeholder="" id="mother-last-name"/>
+                </label>
+
+                <label for="">
+                  <span>Mother's First Name</span>
+                  <input type="text" placeholder="" id="mother-first-name"/>
+                </label>
+              </div>
+
+              <div class="personal-info-client">
+                <h2 class="parts">Your Country or Countries of Citizenship or Nationality</h2>
+                <div class="personal">
+                  <label for="">
+                    <span>Country <span class="required">*</span></span>
+                    <input type="text" id="country" placeholder="US" required/>
+                  </label>
+  
+                  <label for="">
+                    <span>City/Town/Village of Birth <span class="required">*</span></span>
+                    <input type="text" id="city-town"/>
+                  </label>
+  
+                  <label for="">
+                    <span>State/Province of Birth <span class="required">*</span></span>
+                    <input type="text" placeholder="" id="state-province-birth" required/>
+                  </label>
+  
+                  <label for="">
+                    <span>Country of Birth <span class="required">*</span></span>
+                    <input type="text" placeholder="" id="country-birth" required />
+                  </label>
+  
+                  <label for="">
+                    <span>Date of Birth (mm/dd/yyyy) <span class="required">*</span></span>
+                    <input type="date" placeholder="" id="date-birth" required/>
+                  </label>
+                </div>
+
+              <div class="personal-info-client">
+                <h2 class="parts">Information About Your Last Arrival in the United States</h2>
+                <div class="personal">
+                  <label for="">
+                    <span>Form I-94 Arrival-Departure Record Number</span>
+                    <input type="number" placeholder="(if any)" id="i-94-number" />
+                  </label>
+  
+                  <label for="">
+                    <span>Passport Number</span>
+                    <input type="text" placeholder="Your Most Recently Issued Passport" id="passport-number"/>
+                  </label>
+  
+                  <label for="">
+                    <span>Travel Document Number</span>
+                    <input type="text" placeholder="(if any)" id="travel-document-number"/>
+                  </label>
+  
+                  <label for="">
+                    <span>Country That Issued Your Passport</span>
+                    <input type="text" placeholder="or Travel Document" id="country-issued-passport"/>
+                  </label>
+  
+                  <label for="">
+                    <span>Expiration Date for Passport</span>
+                    <input type="date" placeholder="or Travel Document" id="expiration-date-passport"/>
+                  </label>
+
+                  <label for="">
+                    <span>Date of Your Last Arrival Into the US <span class="required">*</span></span>
+                    <input type="date" placeholder="" id="last-arrival-us-date"/>
+                  </label>
+
+                  <label for="">
+                    <span>Place of Your Last Arrival Into the US <span class="required">*</span></span>
+                    <input type="text" placeholder="Example: YSIDRO, CA" id="last-place-arrival-us"/>
+                  </label>
+
+                  <label for="">
+                    <span>Immigration Status at Your Last Arrival</span>
+                    <input type="text" placeholder="(for example, B-2 visitor, ... or no status)" id="immigration-status-arrival" />
+                  </label>
+
+                  <label for="">
+                    <span>Your Current Immigration Status or Category</span>
+                    <input type="text" placeholder="ASYLUM PENDING" id="current-immigration-status"/>
+                  </label>
+                </div>
+            </div>
+
+            <button class="btn-pdf">Get PDF</button>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">Footer Links...</footer>
+    </main>
+
+    <section class="container pdf-file">
+      <div class="pdf-file-header">
+        <img src="./src/images/HopeLogo.jpg" alt="">
+        <h3>Work Permit Clinic</h3>
+        <span class="pdf-date">08/16/2024</span>
+      </div>
+
+      <div class="pdf-file-body">
+        <div class="pdf-file-body-header">
+          <h2>Form I-765</h2>
+          <p>Application for Employment Authorization</p>
+        </div>
+
+        <hr>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="pdf-file-body-content">
+          <div class="">
+            <span class="pdf-label">Last Name: </span>
+            <span class="pdf-value upper last-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">First Name: </span>
+            <span class="pdf-value upper first-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Middle Name: </span>
+            <span class="pdf-value upper middle-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Other Names: </span>
+            <span class="pdf-value upper other-names"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">In Care Of Name (if any): </span>
+            <span class="pdf-value upper in-care-of"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Street Number and Name: </span>
+            <span class="pdf-value upper street-number-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Apt. Ste. Flr.: </span>
+            <span class="pdf-value upper apt-number"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">City or Town: </span>
+            <span class="pdf-value upper city-town"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">State: </span>
+            <span class="pdf-value upper state"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">ZIP Code: </span>
+            <span class="pdf-value upper zip-code"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Alien Registration Number: </span>
+            <span class="pdf-value upper alien-number"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">USCIS Online Account Number: </span>
+            <span class="pdf-value upper uscis-account-number"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Gender: </span>
+            <span class="pdf-value upper gender"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Marital Status: </span>
+            <span class="pdf-value upper marital-status"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Father's Last Name: </span>
+            <span class="pdf-value upper father-last-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Father's First Name: </span>
+            <span class="pdf-value upper father-first-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Mother's Last Name: </span>
+            <span class="pdf-value upper mother-last-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Mother's First Name: </span>
+            <span class="pdf-value upper mother-first-name"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Your Country: </span>
+            <span class="pdf-value upper country"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">City/Town/Village of Birth: </span>
+            <span class="pdf-value upper city"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">State/Province of Birth: </span>
+            <span class="pdf-value upper state-province-birth"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Country of Birth: </span>
+            <span class="pdf-value upper country-birth"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Date of Birth (mm/dd/yyyy): </span>
+            <span class="pdf-value upper date-birth"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Form I-94 Arrival-Departure Record Number: </span>
+            <span class="pdf-value upper i-94-number"></span>
+          </div>
+          
+          <div class="">
+            <span class="pdf-label">Passport Number: </span>
+            <span class="pdf-value upper passport-number"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Travel Document Number: </span>
+            <span class="pdf-value upper travel-document-number"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Country That Issued Your Passport: </span>
+            <span class="pdf-value upper country-issued-passport"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Expiration Date for Passport: </span>
+            <span class="pdf-value upper expiration-date-passport"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Date of Your Last Arrival Into the US: </span>
+            <span class="pdf-value upper last-arrival-us-date"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Place of Your Last Arrival Into the US: </span>
+            <span class="pdf-value upper last-place-arrival-us"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Immigration Status at Your Last Arrival: </span>
+            <span class="pdf-value upper immigration-status-arrival"></span>
+          </div>
+
+          <div class="">
+            <span class="pdf-label">Your Current Immigration Status or Category: </span>
+            <span class="pdf-value upper current-immigration-status"></span>
+          </div>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <hr>
+
+        <!-- <div class="pdf-file-footer">
+          <p>
+            <strong>Important Information About the Work Permit Clinic</strong>
+            <br />
+            The Work Permit Clinic is a free service provided by Hope Acts. The clinic is held every week on Tuesdays of each month from 11:00 a.m. to 4:00 p.m. at the Hope Acts office located at 14 Sherman St in Portland, Maine. The clinic is open to all asylum seekers and refugees who are seeking employment authorization. For more information, please contact Hope Acts at (207) 274-6007 or visit our website at www.hopeacts.org.
+          </p>
+      </div> -->
+
+    </section>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

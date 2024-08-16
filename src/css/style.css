@@ -1,0 +1,265 @@
+/* CSS styles go here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+main {
+  display: flex;
+  background-color: #333;
+}
+
+/* Show and Hide PDF and Form Page */
+
+.pdf-file {
+  /* display: block; */
+  display: none;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.form-page {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  background-color: #222;
+  color: #f2f2f2;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 0.25rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  width: 600px;
+  text-align: center;
+}
+
+.header a {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.header a:hover {
+  transition: all 0.3s;
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.form-container {
+  background-color: #222;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+}
+
+.form-container h3 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info-client {
+  margin-top: 25px;
+}
+
+.personal {
+  display: flex;
+  gap: 30px 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+input,
+select,
+button {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0.25rem;
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #333;
+  color: #f2f2f2bd;
+  font-size: 1.2rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.parts {
+  margin-bottom: 40px;
+  background-color: rgba(255, 68, 0, 0.623);
+  padding: 10px;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+}
+
+.btn-pdf {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: green;
+  color: #f2f2f2;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-pdf:hover {
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #f2f2f2;
+  height: 300px;
+  border-radius: 0.25rem;
+  margin-top: 100px;
+}
+
+/* PDF FILE SECTION */
+
+.pdf-file-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222;
+  padding: 20px 0;
+}
+
+.pdf-file-body-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.pdf-file-body-content {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  gap: 10px;
+}
+
+/* .pdf-file-body-content span */
+
+.upper {
+  text-transform: uppercase;
+}
+
+.pdf-label,
+.pdf-value {
+  font-size: 1.2rem;
+}
+.pdf-label {
+  font-weight: bold;
+}
+.pdf-value {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.pdf-file-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  margin-top: 500px;
+  padding: 20px 0;
+  font-size: 1.05rem;
+}
+/*-----------------------------------*/
+
+.ligth-theme {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.required {
+  color: red;
+  font-weight: 500;
+}
