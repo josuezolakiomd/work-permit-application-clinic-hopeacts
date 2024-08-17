@@ -34,7 +34,7 @@ h6 {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 20px 30px;
@@ -65,6 +65,7 @@ main {
 .header {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 350px;
   justify-content: center;
   background-color: #222;
@@ -81,8 +82,9 @@ main {
 
 .header p {
   font-size: 1.2rem;
-  width: 600px;
+  max-width: 600px;
   text-align: center;
+  padding: 0 20px;
 }
 
 .header a {
@@ -184,13 +186,50 @@ label {
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: #f2f2f2;
   height: 300px;
   border-radius: 0.25rem;
   margin-top: 100px;
+  padding: 0 20px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  gap: 20px;
+  background-color: #cccccc23;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.footer-box:hover {
+  background-color: #f2f2f295;
+  transition: all 0.3s;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover {
+  background-image: url("./images/myself-1.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+}
+
+.box-2:hover {
+  background-image: url("./images/HopeLogo.jpg");
+}
+
+.box-3:hover {
+  background-image: url("./images/chatgpt.jpg");
 }
 
 /* PDF FILE SECTION */
@@ -246,6 +285,23 @@ label {
   margin-top: 500px;
   padding: 20px 0;
   font-size: 1.05rem;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 1000px) {
+  /* .container {
+    display: none;
+  } */
+
+  .footer {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 20px;
+  }
+}
+
+@media screen (max) {
 }
 /*-----------------------------------*/
 
